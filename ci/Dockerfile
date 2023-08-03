@@ -1,6 +1,6 @@
+ARG BASE_IMAGE_NAME=ghcr.io/zama-ai/fhevm-tfhe-cli
 ARG FHEVM_TFHE_CLI_TAG=latest
-FROM ghcr.io/zama-ai/fhevm-tfhe-cli:${FHEVM_TFHE_CLI_TAG}
-
+FROM ${BASE_IMAGE_NAME}:${FHEVM_TFHE_CLI_TAG}
 
 WORKDIR /home
 RUN export ARCH=$(uname -m)

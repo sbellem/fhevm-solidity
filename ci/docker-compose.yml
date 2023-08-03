@@ -4,7 +4,8 @@ services:
     build:
       context: .
       args:
-        FHEVM_TFHE_CLI_TAG: v0.1.1
+        BASE_IMAGE_NAME: ghcr.io/sbellem/fhevm-tfhe-cli
+        FHEVM_TFHE_CLI_TAG: 0a1c556
     image: docker-python-fhevm
     volumes:
       - ../:/home
